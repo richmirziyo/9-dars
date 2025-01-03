@@ -51,3 +51,21 @@ function groupByValue(obj) {
     }
     return result;
 }
+
+// uyga vazifa uchun berilgan misol masallalardan 
+
+// 1
+
+const me = {
+    firstName: "John",
+    lastName: "Johnov",
+    age: 23,
+};
+
+function objectToString(obj) {
+    return Object.entries(obj)
+        .map(([key, value]) => `${key}: ${Array.isArray(value) ? value.join("+") : value}`)
+        .join("\n");
+}
+
+// chat gpti dan jicha foydalangan man 
